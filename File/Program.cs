@@ -14,6 +14,7 @@ namespace Files
             {
                 FileInfo fileinfo = new FileInfo(sourcepath);
                 fileinfo.CopyTo(targetpath);
+                FileInfo fileRename = new FileInfo(targetpath);
                 string[] lines = File.ReadAllLines(sourcepath); 
                 foreach(string line in lines)
                 {
